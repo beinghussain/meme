@@ -1,7 +1,9 @@
 var app = new Vue({
    el: "#app",
    data: {
-      tweet: "Some times I think I should create a meme page so that if I upload anything, no one is going to judge me!"
+      tweet: "This is your tweet. Type to change",
+      date: moment().format("DD/MM/yy"),
+      time: moment().format("hh:mm A")
    },
    methods: {
       capture: () => {
