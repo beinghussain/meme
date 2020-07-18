@@ -1,0 +1,110 @@
+body {
+   background: #fafafa !important;
+}
+
+/* semi bold font92726 */
+/* regular font92727 */
+
+.app {
+   width: 100%;
+   display: flex;
+   justify-content: center;
+   flex-direction: column;
+   align-items: center;
+}
+
+.tweet_input {
+   margin-top: 30px;
+   margin-bottom: 30px;
+   width: 400px;
+   textarea {
+      background: #fff;
+      padding: 15px;
+      width: 100%;
+      resize: none;
+      border: 1px solid #ededed;
+      &:focus {
+         outline: none;
+      }
+   }
+}
+
+button {
+   margin-top: 30px;
+   width: 400px;
+   border: none;
+   height: 50px;
+   font-size: 20px;
+   background: #3c6382;
+   color: #fff;
+   border-radius: 3px;
+   box-shadow: 0px 3px 0px #0a3d62;
+   &:focus {
+      outline: none;
+      cursor: pointer;
+   }
+}
+
+.box {
+   // box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.05);
+   // border: 1px solid #ededed;
+
+   padding: 30px;
+   width: 400px;
+   height: 400px;
+   display: flex;
+   flex-direction: column;
+   background: url("images/bg.JPG");
+   background-size: cover;
+   background-position: center;
+   justify-content: center;
+}
+
+.text {
+   margin-top: 30px;
+   font-size: 17px;
+}
+
+.profile_image {
+   background: rgb(255, 255, 255);
+   height: 50px;
+   width: 50px;
+   border-radius: 100%;
+   margin-right: 15px;
+   background: url("images/profile.jpg");
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+}
+
+.profile_header {
+   img {
+      margin-right: 15px;
+      width: 50px;
+      height: 50px;
+      border-radius: 100%;
+      object-fit: cover;
+   }
+   display: flex;
+   h1 {
+      font-family: font92720;
+      display: flex;
+      align-items: center;
+      font-size: 16px;
+      color: #333333;
+      img {
+         margin-left: 4px;
+         width: 16px;
+         height: 16px;
+      }
+   }
+   p {
+      font-size: 14px;
+      font-weight: 500;
+      color: #90a4ae;
+   }
+   h1,
+   p {
+      margin: 0;
+   }
+}
