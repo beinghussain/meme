@@ -3,7 +3,8 @@ var app = new Vue({
    data: {
       tweet: "This is your tweet. Type to change",
       date: moment().format("DD/MM/yy"),
-      time: moment().format("hh:mm A")
+      time: moment().format("hh:mm A"),
+      nameExtension: ""
    },
    methods: {
       capture: () => {
