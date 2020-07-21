@@ -7,6 +7,16 @@ var app = new Vue({
       nameExtension: ""
    },
    methods: {
+      readProfile: event => {
+         var reader = new FileReader();
+         reader.onload = function() {
+            $(".profile_image").css("background-image", `url('${reader.result}')`);
+         };
+         reader.readAsDataURL(event.target.files[0]);
+      },
+      profileSelect: () => {
+         $(".profileSelect").trigger("click");
+      },
       capture: () => {
          html2canvas(document.querySelector("#capture"), {
             allowTaint: false,
